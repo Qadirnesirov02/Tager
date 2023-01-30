@@ -1,0 +1,24 @@
+{
+	"name": "Pyro Tagger",
+	"description": "Bu bot Şirvan Tərəfindən kodlanan TagAll botudur.",
+	"repository": "https://github.com/Goqerti/PyroTagger",
+	"env": {
+		"BOT_TOKEN": {
+			"description": "@BotFather’dən aldığın bot token."
+		},
+    	"API_ID": {
+      		"description": "API_ID'ni https://my.telegram.org/apps addresindən ala bilərsiniz"
+    	},
+    	"API_HASH": {
+   			"description": "API_HASH'i https://my.telegram.org/apps adresindən ala bilərsiniz"
+   		},
+		"BOT_NAME": {
+			"description": "@ olmadan botunuzun username si."
+		}
+	},
+	"buildpacks": [
+		{
+			"url": "heroku/python"
+		}
+	]
+}
