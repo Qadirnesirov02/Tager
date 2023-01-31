@@ -19,7 +19,7 @@ TG = Client(
 	)
 
 MENTION = "[{}](tg://user?id={})"
-MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳!Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
+MESSAGE = "Salam! {}, Əyləncə Dolu Qrupumuza Xoş Gəldin🥳! Qaydalara riayət etdikcə səndə favori userlərimizdən biri olacaqsan🤩! Əminəm ki Nümunəvi Userlərdən biri olacaqsan!🥰"
 
 DUR = False
 SORGU = None
@@ -48,7 +48,7 @@ async def start(client, message):
 		GRUP.append(message.chat.id)
 	else:
 		pass
-	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla bağlı məlumat üçün /help yaz🥰",
+	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tağ botuyam.\n\nKomutlarla bağlı məlumat üçün /help yaz.",
 		disable_web_page_preview=True,
 		reply_markup=bstart()
 		)
@@ -61,7 +61,7 @@ async def star(client, message):
 		GRUP.append(message.chat.id)
 	else:
 		pass
-	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla bağlı məlumat üçün /help yaz🥰",
+	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tağ botuyam.\n\nKomutlarla bağlı məlumat üçün /help yaz.",
 		disable_web_page_preview=True,
 		reply_markup=bstart()
 		)
@@ -71,14 +71,14 @@ async def star(client, message):
 	& filters.group
 )
 async def help(client, message):
-	await message.reply_text("🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\nBot Sahib Əmri:\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
+	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\nBot Sahib Əmri:\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command("help")
 	& filters.private
 )
 async def hel(client, message):
-	await message.reply_text("🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
+	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\nBot Sahib Əmri:\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command(["admin", "all"])
@@ -99,7 +99,7 @@ async def tag(client: TG, message: Message):
 	chat = message.chat
 	async for mem in TG.iter_chat_members(chat_id=chat.id, filter="administrators"):
 		if message.from_user.id == mem.user.id:
-			await message.reply_text(f"{message.from_user.mention} Tağ prosesini başlatdı! Hərkəsi tağ edirəm!⚡️",
+			await message.reply_text(f"{message.from_user.mention} Tağ prosesini başlatdı! Hərkəsi tağ edirəm! ⚡️",
 				reply_markup=btag()
 				)
 			time.sleep(1)
@@ -126,7 +126,7 @@ async def ta(client: TG, message: Message):
 	chat = message.chat
 	async for mem in TG.iter_chat_members(chat_id=chat.id, filter="administrators"):
 		if message.from_user.id == mem.user.id:
-			await message.reply_text(f"{message.from_user.mention} Adminləri tağ etməyimi istədi⚡️ Adminləri tağ edirəm!🥳",
+			await message.reply_text(f"{message.from_user.mention} Adminləri tağ etməyimi istədi⚡️\nAdminləri tağ edirəm!🥳",
 				reply_markup=btag()
 				)
 			time.sleep(1)
@@ -158,7 +158,7 @@ async def stop(client: TG, message: Message):
 				return
 
 			DUR = True
-			await message.reply_text(f"{message.from_user.mention} Tağ prosesini dayandırdı❌ Tamam heçkəsi tağ etmirəm😒")	
+			await message.reply_text(f"{message.from_user.mention} Tağ prosesini dayandırdı❌ \nTamam heçkəsi tağ etmirəm😒")	
 		if message.from_user.id != mem.user.id:
 			pass
 		
