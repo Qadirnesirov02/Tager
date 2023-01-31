@@ -4,10 +4,10 @@ import sys
 import os
 import time
 
-API_ID = os.getenv("API_ID")
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-BOT_NAME = os.getenv("BOT_NAME")
+API_ID = os.getenv("API_ID", "19485442")
+API_HASH = os.getenv("API_HASH", "a03fcb372b3ec4e406b5d52f84b02e53")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6132791182:AAFrxAmzyg3rpiOdBVGzqQUw1FDbMuIzm_I")
+BOT_NAME = os.getenv("BOT_NAME", "ayparatager_bot")
 
 
 
