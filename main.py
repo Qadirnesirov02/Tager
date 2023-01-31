@@ -81,7 +81,7 @@ async def hel(client, message):
 	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /tag\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
-	filters.command(["admin", "tag"])
+	filters.command(["admin", "all"])
 	& filters.private
 )
 async def priw(client, message):
@@ -89,7 +89,7 @@ async def priw(client, message):
 
 
 @TG.on_message(
-	filters.command("tag")
+	filters.command("all")
 	& filters.group
 	)
 async def tag(client: TG, message: Message):
@@ -104,7 +104,7 @@ async def tag(client: TG, message: Message):
 				)
 			time.sleep(1)
 			SORGU = True
-			async for member in TG.iter_chat_members(chat_id=chat.id, filter="tag"):
+			async for member in TG.iter_chat_members(chat_id=chat.id, filter="all"):
 				if DUR:
 					DUR=False
 					SORGU = None
