@@ -48,7 +48,7 @@ async def start(client, message):
 		GRUP.append(message.chat.id)
 	else:
 		pass
-	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla Bağlı Məlumat üçün /help yaz!🥰",
+	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla bağlı məlumat üçün /help yaz🥰",
 		disable_web_page_preview=True,
 		reply_markup=bstart()
 		)
@@ -61,7 +61,7 @@ async def star(client, message):
 		GRUP.append(message.chat.id)
 	else:
 		pass
-	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla Bağlı Məlumat üçün /help yaz!🥰",
+	await message.reply_text(f"Salam! {message.from_user.mention}\n\nMən [@nesirovqadirofficiall](https://t.me/nesirovqadirofficiall) tərəfindən hazırlanan tag botuyam!⚡️\n\nKomutlarla bağlı məlumat üçün /help yaz🥰",
 		disable_web_page_preview=True,
 		reply_markup=bstart()
 		)
@@ -71,21 +71,21 @@ async def star(client, message):
 	& filters.group
 )
 async def help(client, message):
-	await message.reply_text(f"Salam!{message.from_user.mention}\n\nƏmrlərlə Bağlı Kömək menyusundasınız➡️Əmrlərin İstifadəsi:\n/admin Qrupdakı Bütün adminləri tag edir✅\n/all Qrupdakı hərkəsi tag edir✅\n/cancel Tag prosesini dayandırır✅\n\nHəmçini Bot’da Qrupa Gələn şəxsləri Salamlama funksiyası vardır🥰\n\nDiqqət!:Əgər Qrupda Admin deyilsəniz bu funksiyalar sizdə işləmiyəcək!❌")
+	await message.reply_text("🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\nBot Sahib Əmri:\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command("help")
 	& filters.private
 )
 async def hel(client, message):
-	await message.reply_text(f"Salam!{message.from_user.mention}\n\nƏmrlərlə Bağlı Kömək menyusundasınız➡️Əmrlərin İstifadəsi:\n/admin Qrupdakı Bütün adminləri tag edir✅\n/all Qrupdakı hərkəsi tag edir✅\n/cancel Tag prosesini dayandırır✅\n\nHəmçini Bot’da Qrupa Gələn şəxsləri Salamlama funksiyası vardır🥰\n\nDiqqət!:Əgər Qrupda Admin deyilsəniz bu funksiyalar sizdə işləmiyəcək!❌")
+	await message.reply_text("🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command(["admin", "all"])
 	& filters.private
 )
 async def priw(client, message):
-	await message.reply_text("Hmm burada 2miz olduğumuz üçün və 2 mizdə online olduğumuz üçün bu əmri qruplarda işlət!🤠")
+	await message.reply_text("Hmm burada 2-miz olduğumuz üçün və 2-mizdə online olduğumuz üçün bu əmri qruplarda işlət!🤠")
 
 
 @TG.on_message(
@@ -99,7 +99,7 @@ async def tag(client: TG, message: Message):
 	chat = message.chat
 	async for mem in TG.iter_chat_members(chat_id=chat.id, filter="administrators"):
 		if message.from_user.id == mem.user.id:
-			await message.reply_text(f"{message.from_user.mention} Tag Prosesini Başlatdı! Hərkəsi Tag Edirəm Boss!⚡️",
+			await message.reply_text(f"{message.from_user.mention} Tağ prosesini başlatdı! Hərkəsi tağ edirəm!⚡️",
 				reply_markup=btag()
 				)
 			time.sleep(1)
@@ -126,7 +126,7 @@ async def ta(client: TG, message: Message):
 	chat = message.chat
 	async for mem in TG.iter_chat_members(chat_id=chat.id, filter="administrators"):
 		if message.from_user.id == mem.user.id:
-			await message.reply_text(f"{message.from_user.mention} Adminləri tag etməyimi istədi⚡️ Adminləri Tag Edirəm Boss!🥳",
+			await message.reply_text(f"{message.from_user.mention} Adminləri tağ etməyimi istədi⚡️ Adminləri tağ edirəm!🥳",
 				reply_markup=btag()
 				)
 			time.sleep(1)
@@ -154,11 +154,11 @@ async def stop(client: TG, message: Message):
 	async for mem in TG.iter_chat_members(chat_id=chat.id, filter="administrators"):
 		if message.from_user.id == mem.user.id:
 			if SORGU == None:
-				await message.reply_text("Aktiv bir all prosesi yoxdur😕👍🏻")
+				await message.reply_text("Aktiv bir all prosesi yoxdur😕")
 				return
 
 			DUR = True
-			await message.reply_text(f"{message.from_user.mention} Tag prosesini dayandırdı❌ Tamam heçkəsi tag etmirəm😒")	
+			await message.reply_text(f"{message.from_user.mention} Tağ prosesini dayandırdı❌ Tamam heçkəsi tağ etmirəm😒")	
 		if message.from_user.id != mem.user.id:
 			pass
 		
@@ -173,7 +173,7 @@ async def duyuru(client: TG, message: Message):
 		for i in GRUP:
 			await TG.send_message(chat_id=i, text=f"Yeni Reklam:\n{text}")
 	else:
-		await message.reply_text("<b>Sən sudo deyilsen qaqaşım.</b>")
+		await message.reply_text("<b>Sən botun sudo istifadəçisi deyilsen.</b>")
 
 
 @TG.on_message(filters.group & filters.new_chat_members)
