@@ -71,14 +71,14 @@ async def star(client, message):
 	& filters.group
 )
 async def help(client, message):
-	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /tag\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
+	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command("help")
 	& filters.private
 )
 async def hel(client, message):
-	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /tag\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
+	await message.reply_text("**Qrup Admin Əmrləri:**\n🔮 İstifadə: /all\n📃 Açıqlama: Qrupdakı hərkəsi tağ edər.\n\n🔮 İstifadə: /admin\n📃 Açıqlama: Qrupdakı bütün adminləri tağ edər.\n\n🔮 İstifadə: /cancel\n📃 Açıqlama: Qrupdakı tağ prosesini dayandırar.\n\n**Bot Sahib Əmri:**\n🔮 İstifadə: /reklam\n📃 Açıqlama: Qruplarda reklam yayımı edər.")
 	
 @TG.on_message(
 	filters.command(["admin", "all"])
