@@ -6,8 +6,8 @@ import time
 
 API_ID = os.getenv("API_ID", "19485442")
 API_HASH = os.getenv("API_HASH", "a03fcb372b3ec4e406b5d52f84b02e53")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "6132791182:AAFrxAmzyg3rpiOdBVGzqQUw1FDbMuIzm_I")
-BOT_NAME = os.getenv("BOT_NAME", "ayparatager_bot")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6183568750:AAH9otwr5CMP8VvYC2ut0thpKu4X-O0-Mmc")
+BOT_NAME = os.getenv("BOT_NAME", "zombirobot")
 
 
 
