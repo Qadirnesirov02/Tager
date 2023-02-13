@@ -4,10 +4,10 @@ import sys
 import os
 import time
 
-API_ID = os.getenv("API_ID", "19485442")
-API_HASH = os.getenv("API_HASH", "a03fcb372b3ec4e406b5d52f84b02e53")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "6183568750:AAH9otwr5CMP8VvYC2ut0thpKu4X-O0-Mmc")
-BOT_NAME = os.getenv("BOT_NAME", "zombirobot")
+API_ID = os.getenv("API_ID", "26712413")
+API_HASH = os.getenv("API_HASH", "3298034eb7cec614ef852fda02536153")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6137356162:AAF-eoaUk-MVhziDOLk94bZCNtUVc3jgOlA")
+BOT_NAME = os.getenv("BOT_NAME", "imperatortag_bot")
 
 
 
@@ -31,7 +31,7 @@ GRUP = []
 
 def bstart():
 	BUTTON=[[InlineKeyboardButton(text="👨🏻‍💻 Sahibim", url="https://t.me/nesirovqadirofficiall")]]
-	BUTTON+=[[InlineKeyboardButton(text="Məni Qrupa Əlavə Et ✅", url=f"https://t.me/ayparatager_bot?startgroup=true")]]
+	BUTTON+=[[InlineKeyboardButton(text="Məni Qrupa Əlavə Et ✅", url=f"https://t.me/imperatortag_bot?startgroup=true")]]
 	return InlineKeyboardMarkup(BUTTON)
 
 def btag():
